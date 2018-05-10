@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Choose Your Own Adventure</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Speckled Blue Egg</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#story1">First Tending</a>
+            </li>
+             <li class="nav-item" id="navStory2" style="display: none;">
+              <a class="nav-link js-scroll-trigger" href="#story2">Second Tending</a>
+            </li>
+            <li class="nav-item" id="navStoryEnd" style="display: none;">
+              <a class="nav-link js-scroll-trigger" href="#storyEnd">Hatching Day</a>
+            </li>
+            
+<!--             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Can good things come in big packages?</div>
+         <!-- <div class="intro-heading text-uppercase">Speckled Blue Egg</div> -->
+         
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-downarrow" href="#story1">&#9660;</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- story1 -->
+    <section id="story1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">A Winter Storm...</h2>
+            <p class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, 
+               consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><br/>Minima maxime quam architecto 
+               quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, 
+               dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor 
+               sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</br></br>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, 
+               consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo 
+               inventore harum ex magni, dicta impedit.
+            </p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="row text-center">
+          <div class="col-md-6">
+          <button id="btnStory1Choice1" class="btn-choice" type="submit" onclick="Story1Choice1()">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+            </span>
+               <h4 class="service-heading">Put the egg by the fire...</h4>
+               <p class="text-muted">The warmth will keep it well into the night.</p>
+             </button> 
+          </div>  
+    
+          <div class="col-md-6">
+         <button id="btnStory1Choice2" class="btn-choice" type="submit" onclick="Story1Choice2()"> 
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-snowflake-o fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Put the egg by the window...</h4>
+            <p class="text-muted">Let it listen to the chaotic wind.</p>
+          </button> 
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+    <!-- story2 -->
+    <section class="bg-light" id="story2" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">A Day of Leisure...</h2>
+            <p class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, 
+               consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><br/>Minima maxime quam architecto 
+               quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, 
+               dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor 
+               sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</br></br>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, 
+               consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo 
+               inventore harum ex magni, dicta impedit.
+            </p>
+          </div>
+        </div>
+        
+        <div class="row text-center">
+          <div class="col-md-6">
+          <button id="btnStory2Choice1" class="btn-choice" type="submit" onclick="Story2Choice1()">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+            </span>
+               <h4 class="service-heading">Bring the egg to the libray...</h4>
+               <p class="text-muted">A day of quite study might calm it.</p>
+             </button> 
+          </div>  
+ 
+          <div class="col-md-6">
+         <button id="btnStory2Choice2" class="btn-choice" type="submit" onclick="Story2Choice2()"> 
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-snowflake-o fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Bring the egg to the air show...</h4>
+            <p class="text-muted">The action might excite it.</p>
+          </button> 
+          </div>
+        </div>
+        
+      </div>
+    </section>    
+    
+    <!-- storyEnd -->
+    <section id="storyEnd" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Story End, Hatching Day...</h2>
+            <p class="section-subheading text-muted" id="endingText"></p>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+
+    <!-- Footer -->
+    <footer style="border-top: 3px solid #212529">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Cadence Schwartz 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    
+    <!-- Choice Buttons JavaScript -->
+    <script src="js/choiceButtons.js"></script>
+
+  </body>
+
+</html>
