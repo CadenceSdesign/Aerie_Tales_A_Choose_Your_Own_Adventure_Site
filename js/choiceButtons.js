@@ -1,12 +1,12 @@
-var strom ="";
+var storm ="";
 var leisure="";
+
 
 function Story1Choice1() {
     document.getElementById('btnStory1Choice2').style.visibility = 'hidden';
     storm="calm";
     document.getElementById('story2').style.display = 'block';
     document.getElementById('navStory2').style.display = 'block';
-    location.href ="#story2";
 }
 
 function Story1Choice2() {
@@ -14,7 +14,6 @@ function Story1Choice2() {
     storm="exited";
     document.getElementById('story2').style.display = 'block';
     document.getElementById('navStory2').style.display = 'block';
-    location.href ="#story2";
 }
 
 function Story2Choice1() {
@@ -23,7 +22,6 @@ function Story2Choice1() {
     generateEnding();
     document.getElementById('storyEnd').style.display = 'block';
     document.getElementById('navStoryEnd').style.display = 'block';
-    location.href ="#storyEnd";
 }
 
 function Story2Choice2() {
@@ -31,9 +29,7 @@ function Story2Choice2() {
     leisure="exited";
     generateEnding();
     document.getElementById('storyEnd').style.display = 'block';
-    document.getElementById('navStoryEnd').style.display = 'block';
-    location.href ="#storyEnd";
-    
+    document.getElementById('navStoryEnd').style.display = 'block';   
 }
 
 function generateEnding(){
