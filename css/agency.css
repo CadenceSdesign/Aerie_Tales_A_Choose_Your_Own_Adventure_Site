@@ -148,8 +148,9 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
+  font-size: 30px;
   color: #1276b7;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Cookie', cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -262,6 +263,8 @@ header.masthead .intro-text .intro-heading {
 footer {
   padding: 25px 0;
   text-align: center;
+  background-color: #212529;
+  color: white;
 }
 
 footer span.copyright {
@@ -277,6 +280,17 @@ footer ul.quicklinks {
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:white;
+}
+
+.footer-link {
+   color: white;
+   text-decoration: underline;
+}
+
+.footer-link:hover {
+   color: #47bde8;
+   text-decoration: underline;
 }
 
 ul.social-buttons {
