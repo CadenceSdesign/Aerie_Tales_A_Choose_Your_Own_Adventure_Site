@@ -2,18 +2,28 @@
 var calm = 0;
 var excited= 0;
 
+function setStory1(){
+   $("#egg").load(route + "egg.txt");
+   $("#eggSaying").load(route + "eggSaying.txt");
+   $("#story1Title").load(route + "story1Title.txt");
+   $("#story1Par").load(route + "story1Par.txt");
+   $("#story1Button1Title").load(route + "story1Button1Title.txt");
+   $("#story1Button1Par").load(route + "story1Button1Par.txt");
+   $("#story1Button2Title").load(route + "story1Button2Title.txt");
+   $("#story1Button2Par").load(route + "story1Button2Par.txt");
+}
 
 function Story1Choice1() {
    calm += 1;
-   $("#story1ResultTitle").text("You put the egg by the fire.");
-   $("#story1ResultText").text("Now it's warm and calm.");
+   $("#story1ResultTitle").load(route + "story1Choice1Title.txt");
+   $("#story1ResultPar").load(route + "story1Choice1Par.txt");
    NavStory1Result();
 }
 
 function Story1Choice2() {
    excited += 1; 
-   $("#story1ResultTitle").text("You put the egg by the window.");
-   $("#story1ResultText").text("The wind and snow inspire and excite it.");
+   $("#story1ResultTitle").load(route + "story1Choice2Title.txt");
+   $("#story1ResultPar").load(route + "story1Choice2Title.txt");
    NavStory1Result();
 }
 
@@ -24,6 +34,12 @@ function NavStory1Result() {
 }
 
 function ContinueToStory2(){
+   $("#story2Title").load(route + "story2Title.txt");
+   $("#story2Par").load(route + "story2Par.txt");
+   $("#story2Button1Title").load(route + "story2Button1Title.txt");
+   $("#story2Button1Par").load(route + "story2Button1Par.txt");
+   $("#story2Button2Title").load(route + "story2Button2Title.txt");
+   $("#story2Button2Par").load(route + "story2Button2Par.txt");
    document.getElementById('btnContinueToStory2').style.display = 'none';
    document.getElementById('story2').style.display = 'block';
    document.getElementById('navStory2').style.display = 'block';
@@ -31,15 +47,15 @@ function ContinueToStory2(){
 
 function Story2Choice1() {
    calm += 1;
-   $("#story2ResultTitle").text("You brought the egg to the libray.");
-   $("#story2ResultText").text("The quiet made it a bit calmer.");
+   $("#story2ResultTitle").load(route + "story2Choice1Title");
+   $("#story2ResultPar").load(route + "story2Choice1Par");
    NavStory2Result();
 }
 
 function Story2Choice2() {
     excited += 1;
-   $("#story2ResultTitle").text("You brought the egg to the show.");
-   $("#story2ResultText").text("The air routines got it very excited.");
+   $("#story2ResultTitle").load(route + "story2Choice2Title");
+   $("#story2ResultPar").load(route + "story2Choice2Par");
    NavStory2Result();
 }
 
