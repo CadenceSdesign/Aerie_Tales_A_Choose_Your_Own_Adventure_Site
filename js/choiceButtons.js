@@ -2,7 +2,26 @@
 var calm = 0;
 var excited= 0;
 
+function setColorTheme(){
+   if (currColor === "purple"){
+      document.documentElement.style.setProperty("--backgroundImgHeader", "url('../img/header-bg-purple.jpg')");
+      document.documentElement.style.setProperty("--colorDark", "#8b46a3");
+      document.documentElement.style.setProperty("--colorMed", "#a161b7");
+      document.documentElement.style.setProperty("--colorLight", "#b27dc4");
+      document.documentElement.style.setProperty("--colorVeryLight", "#fbf9fc");
+   }else if (currColor === "yellow"){
+      document.documentElement.style.setProperty("--backgroundImgHeader", "url('../img/header-bg-yellow.jpg')");
+      document.documentElement.style.setProperty("--colorDark", "#ffbf00");
+      document.documentElement.style.setProperty("--colorMed", "#ffcf40");
+      document.documentElement.style.setProperty("--colorLight", "#ffdc73");
+      document.documentElement.style.setProperty("--colorVeryLight", "#fff9e8");
+   }else{
+      //default is blue
+   }
+}
+
 function setStory1(){
+   setColorTheme();
    $("#egg").load(route + "egg.txt");
    $("#eggSaying").load(route + "eggSaying.txt");
    $("#story1Title").load(route + "story1Title.txt");
@@ -47,15 +66,15 @@ function ContinueToStory2(){
 
 function Story2Choice1() {
    calm += 1;
-   $("#story2ResultTitle").load(route + "story2Choice1Title");
-   $("#story2ResultPar").load(route + "story2Choice1Par");
+   $("#story2ResultTitle").load(route + "story2Choice1Title.txt");
+   $("#story2ResultPar").load(route + "story2Choice1Par.txt");
    NavStory2Result();
 }
 
 function Story2Choice2() {
-    excited += 1;
-   $("#story2ResultTitle").load(route + "story2Choice2Title");
-   $("#story2ResultPar").load(route + "story2Choice2Par");
+   excited += 1;
+   $("#story2ResultTitle").load(route + "story2Choice2Title.txt");
+   $("#story2ResultPar").load(route + "story2Choice2Par.txt");
    NavStory2Result();
 }
 
