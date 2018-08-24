@@ -20,17 +20,36 @@ function setColorTheme(){
    }
 }
 
-function setStory1(){
-   setColorTheme();
-   $("#egg").load(route + "egg.txt");
-   $("#eggSaying").load(route + "eggSaying.txt");
-   $("#story1Title").load(route + "story1Title.txt");
-   $("#story1Par").load(route + "story1Par.txt");
-   $("#story1Button1Title").load(route + "story1Button1Title.txt");
-   $("#story1Button1Par").load(route + "story1Button1Par.txt");
-   $("#story1Button2Title").load(route + "story1Button2Title.txt");
-   $("#story1Button2Par").load(route + "story1Button2Par.txt");
-}
+function setStory1() {
+    setColorTheme();
+    $("#egg").load(route + "egg.txt");
+    $("#eggSaying").load(route + "eggSaying.txt");
+    $("#story1Title").load(route + "story1Title.txt");
+    $("#story1Par").load(route + "story1Par.txt");
+    $("#story1Button1Title").load(route + "story1Button1Title.txt");
+    $("#story1Button1Par").load(route + "story1Button1Par.txt");
+    $("#story1Button2Title").load(route + "story1Button2Title.txt");
+    $("#story1Button2Par").load(route + "story1Button2Par.txt");
+
+    $.get(route + "story1Button1Icon.txt", function (data) {
+        var icon = data;
+        $("#story1Button1Icon").addClass(icon);
+    });
+    $.get(route + "story1Button2Icon.txt", function (data) {
+        var icon = data;
+        $("#story1Button2Icon").addClass(icon);
+    });
+
+    $.get(route + "story2Button1Icon.txt", function (data) {
+        var icon = data;
+        $("#story2Button1Icon").addClass(icon);
+    });
+    $.get(route + "story2Button2Icon.txt", function (data) {
+        var icon = data;
+        $("#story2Button2Icon").addClass(icon);
+    });
+}   
+
 
 function Story1Choice1() {
    calm += 1;
@@ -95,7 +114,7 @@ function generateEnding(){
   var ending = "";
   if(calm >= 2){
     ending += "Your creature is super calm!";
-  }else if(calm == 1){
+  }else if(calm === 1){
     ending += "Your creature is kinda calm...";
   }else{
     ending += "Your creature is not calm at all.";
@@ -103,7 +122,7 @@ function generateEnding(){
   
   if(excited >= 2){
   ending += " Your creature is super excitable!";
-  }else if(excited == 1){
+  }else if(excited === 1){
     ending += " Your creature is kinda excitable...";
   }else{
     ending += " Your creature is not excitable at all.";

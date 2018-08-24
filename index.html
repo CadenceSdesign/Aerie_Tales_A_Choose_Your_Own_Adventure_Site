@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -14,7 +14,8 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="vendor/fontawesome-free-5.2.0-web/css/v4-shims.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -85,7 +86,7 @@
           <a id="btnStory1Choice1" href="#story1Result" class="btn btn-choice js-scroll-trigger" onclick="Story1Choice1()">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+              <i id="story1Button1Icon" class="fa fa-stack-1x fa-inverse"></i>
             </span>
                <h5 id="story1Button1Title" class="service-heading"></h5>
                <p id="story1Button1Par" class="text-muted"></p>
@@ -96,7 +97,7 @@
           <a id="btnStory1Choice2" href="#story1Result" class="btn btn-choice js-scroll-trigger" onclick="Story1Choice2()"> 
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-snowflake-o fa-stack-1x fa-inverse"></i>
+              <i id="story1Button2Icon" class="fa fa-stack-1x fa-inverse"></i>
             </span>
             <h5 id="story1Button2Title" class="service-heading"></h5>
             <p id="story1Button2Par" class="text-muted"></p>
@@ -139,7 +140,7 @@
           <a id="btnStory2Choice1" href="#story2Result" class="btn btn-choice js-scroll-trigger" onclick="Story2Choice1()">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+              <i id="story2Button1Icon" class="fa fa-stack-1x fa-inverse"></i>
             </span>
                <h5 id="story2Button1Title" class="service-heading"></h5>
                <p id="story2Button1Par" class="text-muted"></p>
@@ -150,7 +151,7 @@
          <a id="btnStory2Choice2" href="#story2Result" class="btn btn-choice js-scroll-trigger" onclick="Story2Choice2()">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-snowflake-o fa-stack-1x fa-inverse"></i>
+              <i id="story2Button2Icon" class="fa fa-stack-1x fa-inverse"></i>
             </span>
             <h5 id="story2Button2Title" class="service-heading"></h5>
             <p id="story2Button2Par" class="text-muted"></p>
@@ -231,7 +232,7 @@
     
     <script>
     var currStory = "blueLarge";
-    var currColor = "blue";
+    var currColor = "purple";
     var route = "stories/" + currStory + "/";
     </script>
     <!-- Choice Buttons JavaScript -->
