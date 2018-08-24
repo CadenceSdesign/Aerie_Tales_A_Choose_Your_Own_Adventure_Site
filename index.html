@@ -45,6 +45,9 @@
              <li class="nav-item" id="navStory2" style="display: none;">
               <a class="nav-link js-scroll-trigger" href="#story2">Second Tending</a>
             </li>
+            <li class="nav-item" id="navStory3" style="display: none;">
+                  <a class="nav-link js-scroll-trigger" href="#story3">Third Tending</a>
+            </li>
             <li class="nav-item" id="navStoryEnd" style="display: none;">
               <a class="nav-link js-scroll-trigger" href="#storyEnd">Hatching Day</a>
             </li>
@@ -171,16 +174,71 @@
           </div>
           
           <div class="col-lg-12 text-center">
-          <a id="btnContinueToStoryEnd" href="#storyEnd" class="btn btn-choice js-scroll-trigger" onclick="ContinueToStoryEnd()">
+          <a id="btnContinueToStory3" href="#story3" class="btn btn-choice js-scroll-trigger" onclick="ContinueToStory3()">
                <h5 class="service-heading">Continue to next event.</h5>
                <p class="text-muted">Wait till the GM tell you.</p>
             </a>
           </div>  
       </div>
     </section>    
+
+      <!-- story3 -->
+      <section id="story3" style="display:none;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2 id="story3Title" class="section-heading text-uppercase"></h2>
+                      <p id="story3Par" class="text-muted">
+                      </p>
+                  </div>
+              </div>
+
+              <div class="row text-center">
+                  <div class="col-md-6">
+                      <a id="btnStory3Choice1" href="#story3Result" class="btn btn-choice js-scroll-trigger" onclick="Story3Choice1()">
+                          <span class="fa-stack fa-4x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i id="story3Button1Icon" class="fa fa-stack-1x fa-inverse"></i>
+                          </span>
+                          <h5 id="story3Button1Title" class="service-heading"></h5>
+                          <p id="story3Button1Par" class="text-muted"></p>
+                      </a>
+                  </div>
+
+                  <div class="col-md-6">
+                      <a id="btnStory3Choice2" href="#story3Result" class="btn btn-choice js-scroll-trigger" onclick="Story3Choice2()">
+                          <span class="fa-stack fa-4x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i id="story3Button2Icon" class="fa fa-stack-1x fa-inverse"></i>
+                          </span>
+                          <h5 id="story3Button2Title" class="service-heading"></h5>
+                          <p id="story3Button2Par" class="text-muted"></p>
+                      </a>
+                  </div>
+              </div>
+
+          </div>
+
+          <br />
+          <br />
+
+          <div class="row" id="story3Result" style="display:none;">
+              <div class="col-lg-12 text-center">
+                  <h4 id="story3ResultTitle" class="section-heading text-uppercase"></h4>
+                  <p id="story3ResultPar" class="text-muted"></p>
+              </div>
+
+              <div class="col-lg-12 text-center">
+                  <a id="btnContinueToStoryEnd" href="#storyEnd" class="btn btn-choice js-scroll-trigger" onclick="ContinueToStoryEnd()">
+                      <h5 class="service-heading">Continue to next event.</h5>
+                      <p class="text-muted">Wait till the GM tell you.</p>
+                  </a>
+              </div>
+          </div>
+      </section>    
     
     <!-- storyEnd -->
-    <section id="storyEnd" style="display:none;">
+    <section class="bg-light" id="storyEnd" style="display:none;">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">

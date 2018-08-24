@@ -48,6 +48,15 @@ function setStory1() {
         var icon = data;
         $("#story2Button2Icon").addClass(icon);
     });
+
+    $.get(route + "story3Button1Icon.txt", function (data) {
+        var icon = data;
+        $("#story3Button1Icon").addClass(icon);
+    });
+    $.get(route + "story3Button2Icon.txt", function (data) {
+        var icon = data;
+        $("#story3Button2Icon").addClass(icon);
+    });
 }   
 
 
@@ -61,7 +70,7 @@ function Story1Choice1() {
 function Story1Choice2() {
    excited += 1; 
    $("#story1ResultTitle").load(route + "story1Choice2Title.txt");
-   $("#story1ResultPar").load(route + "story1Choice2Title.txt");
+   $("#story1ResultPar").load(route + "story1Choice2Par.txt");
    NavStory1Result();
 }
 
@@ -103,6 +112,38 @@ function NavStory2Result() {
    document.getElementById('story2Result').style.display = 'block';
 }
 
+function ContinueToStory3(){
+   $("#story3Title").load(route + "story3Title.txt");
+   $("#story3Par").load(route + "story3Par.txt");
+   $("#story3Button1Title").load(route + "story3Button1Title.txt");
+   $("#story3Button1Par").load(route + "story3Button1Par.txt");
+   $("#story3Button2Title").load(route + "story3Button2Title.txt");
+   $("#story3Button2Par").load(route + "story3Button2Par.txt");
+   document.getElementById('btnContinueToStory3').style.display = 'none';
+   document.getElementById('story3').style.display = 'block';
+   document.getElementById('navStory3').style.display = 'block';
+}
+
+function Story3Choice1() {
+   calm += 1;
+   $("#story3ResultTitle").load(route + "story3Choice1Title.txt");
+   $("#story3ResultPar").load(route + "story3Choice1Par.txt");
+   NavStory3Result();
+}
+
+function Story3Choice2() {
+   excited += 1;
+   $("#story3ResultTitle").load(route + "story3Choice2Title.txt");
+   $("#story3ResultPar").load(route + "story3Choice2Par.txt");
+   NavStory3Result();
+}
+
+function NavStory3Result() {
+   document.getElementById('btnStory3Choice1').style.display = 'none';
+   document.getElementById('btnStory3Choice2').style.display = 'none';
+   document.getElementById('story3Result').style.display = 'block';
+}
+
 function ContinueToStoryEnd(){
    generateEnding();
    document.getElementById('btnContinueToStoryEnd').style.display = 'none';
@@ -120,9 +161,9 @@ function generateEnding(){
     ending += "Your creature is not calm at all.";
   }
   
-  if(excited >= 2){
+  if(excited >= 3){
   ending += " Your creature is super excitable!";
-  }else if(excited === 1){
+  }else if(excited === 2){
     ending += " Your creature is kinda excitable...";
   }else{
     ending += " Your creature is not excitable at all.";
