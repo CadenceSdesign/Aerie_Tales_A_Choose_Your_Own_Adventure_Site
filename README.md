@@ -1,4 +1,4 @@
-![Aerie Tales Logo](img/aerieTalesIcon.png?raw=true "Aerie Tales")
+![Aerie Tales Logo](img/aerieTalesIcon.png?raw=true "Aerie Tales Icon")
 
 Aerie Tales, A choose your own adventure website. A mini story is displayed, and two choices are given to the user. 
 
@@ -10,3 +10,4 @@ Upon completion of all the mini stories, an overall ending is generated based of
 
 Based on the Bootstrap – Agency template.
 
+![Aerie Tales](img/aerieTales.png?raw=true "Aerie Tales")
